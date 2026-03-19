@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Webhook Triggered Deployment 🚀"
+    return "Webhook Working Now 🚀"
 
 @app.route("/load")
 def load():
