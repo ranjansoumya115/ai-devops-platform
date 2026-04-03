@@ -1,0 +1,105 @@
+nohup: ignoring input
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile:
+#1 transferring dockerfile: 204B done
+#1 DONE 0.3s
+
+#2 [internal] load metadata for docker.io/library/python:3.10
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/python:3.10@sha256:70a693a5ab49ada7d4d5d974678288262bfeccadf06b8362c90ec9cd1a9b7c97
+#4 resolve docker.io/library/python:3.10@sha256:70a693a5ab49ada7d4d5d974678288262bfeccadf06b8362c90ec9cd1a9b7c97 0.0s done
+#4 DONE 0.0s
+
+#5 [2/4] WORKDIR /app
+#5 CACHED
+
+#6 [internal] load build context
+#6 transferring context: 42.39kB 0.0s done
+#6 DONE 0.1s
+
+#7 [3/4] COPY . .
+#7 DONE 0.2s
+
+#8 [4/4] RUN pip install pandas fastapi uvicorn
+#8 7.887 Collecting pandas
+#8 7.957   Downloading pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+#8 8.278      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 41.7 MB/s eta 0:00:00
+#8 8.611 Collecting fastapi
+#8 8.627   Downloading fastapi-0.135.3-py3-none-any.whl (117 kB)
+#8 8.639      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.7/117.7 kB 14.4 MB/s eta 0:00:00
+#8 8.738 Collecting uvicorn
+#8 8.754   Downloading uvicorn-0.42.0-py3-none-any.whl (68 kB)
+#8 8.766      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.8/68.8 kB 8.1 MB/s eta 0:00:00
+#8 9.014 Collecting pytz>=2020.1
+#8 9.030   Downloading pytz-2026.1.post1-py2.py3-none-any.whl (510 kB)
+#8 9.053      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 510.5/510.5 kB 28.1 MB/s eta 0:00:00
+#8 9.158 Collecting python-dateutil>=2.8.2
+#8 9.177   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+#8 9.193      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 22.5 MB/s eta 0:00:00
+#8 10.29 Collecting numpy>=1.22.4
+#8 10.31   Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+#8 10.62      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 39.8 MB/s eta 0:00:00
+#8 10.82 Collecting tzdata>=2022.7
+#8 10.83   Downloading tzdata-2025.3-py2.py3-none-any.whl (348 kB)
+#8 10.85      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.5/348.5 kB 27.3 MB/s eta 0:00:00
+#8 11.01 Collecting starlette>=0.46.0
+#8 11.02   Downloading starlette-1.0.0-py3-none-any.whl (72 kB)
+#8 11.03      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.7/72.7 kB 8.7 MB/s eta 0:00:00
+#8 11.07 Collecting annotated-doc>=0.0.2
+#8 11.09   Downloading annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+#8 11.14 Collecting typing-inspection>=0.4.2
+#8 11.16   Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+#8 11.26 Collecting typing-extensions>=4.8.0
+#8 11.28   Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+#8 11.29      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 5.8 MB/s eta 0:00:00
+#8 11.81 Collecting pydantic>=2.9.0
+#8 11.83   Downloading pydantic-2.12.5-py3-none-any.whl (463 kB)
+#8 11.84      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 463.6/463.6 kB 39.2 MB/s eta 0:00:00
+#8 11.93 Collecting click>=7.0
+#8 11.95   Downloading click-8.3.1-py3-none-any.whl (108 kB)
+#8 11.96      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.3/108.3 kB 13.7 MB/s eta 0:00:00
+#8 12.01 Collecting h11>=0.8
+#8 12.02   Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#8 12.10 Collecting annotated-types>=0.6.0
+#8 12.12   Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+#8 15.45 Collecting pydantic-core==2.41.5
+#8 15.47   Downloading pydantic_core-2.41.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+#8 15.51      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 57.7 MB/s eta 0:00:00
+#8 15.58 Collecting six>=1.5
+#8 15.60   Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#8 15.71 Collecting anyio<5,>=3.6.2
+#8 15.73   Downloading anyio-4.13.0-py3-none-any.whl (114 kB)
+#8 15.74      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.4/114.4 kB 16.0 MB/s eta 0:00:00
+#8 15.83 Collecting idna>=2.8
+#8 15.85   Downloading idna-3.11-py3-none-any.whl (71 kB)
+#8 15.86      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.0/71.0 kB 8.1 MB/s eta 0:00:00
+#8 15.92 Collecting exceptiongroup>=1.0.2
+#8 15.93   Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+#8 16.42 Installing collected packages: pytz, tzdata, typing-extensions, six, numpy, idna, h11, click, annotated-types, annotated-doc, uvicorn, typing-inspection, python-dateutil, pydantic-core, exceptiongroup, pydantic, pandas, anyio, starlette, fastapi
+#8 29.97 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 29.97 Successfully installed annotated-doc-0.0.4 annotated-types-0.7.0 anyio-4.13.0 click-8.3.1 exceptiongroup-1.3.1 fastapi-0.135.3 h11-0.16.0 idna-3.11 numpy-2.2.6 pandas-2.3.3 pydantic-2.12.5 pydantic-core-2.41.5 python-dateutil-2.9.0.post0 pytz-2026.1.post1 six-1.17.0 starlette-1.0.0 typing-extensions-4.15.0 typing-inspection-0.4.2 tzdata-2025.3 uvicorn-0.42.0
+#8 30.16 
+#8 30.16 [notice] A new release of pip is available: 23.0.1 -> 26.0.1
+#8 30.16 [notice] To update, run: pip install --upgrade pip
+#8 DONE 32.5s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 15.0s done
+#9 exporting manifest sha256:7497390c2ad4ab992cc2d60b122f08ee59534577abbf7b5709b8cad2bcd1015e
+#9 exporting manifest sha256:7497390c2ad4ab992cc2d60b122f08ee59534577abbf7b5709b8cad2bcd1015e 0.0s done
+#9 exporting config sha256:634d8389b45d7187993240bffffe40a67f747aeb12063a4178fb08d869fb0eda 0.0s done
+#9 exporting attestation manifest sha256:9a62cd0a4df363ae8a74e1406f8474b9748043cfb0520e1cb5b2da397de3e329 0.0s done
+#9 exporting manifest list sha256:49b13fc4eb4c237b7e69b98680d44750385bebf10f0494457aef5b0cb78e7ad9 0.0s done
+#9 naming to docker.io/library/prediction-api:latest
+#9 naming to docker.io/library/prediction-api:latest 0.0s done
+#9 unpacking to docker.io/library/prediction-api:latest
+#9 unpacking to docker.io/library/prediction-api:latest 5.0s done
+#9 DONE 20.2s

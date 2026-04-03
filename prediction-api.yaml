@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prediction-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prediction-api
+  template:
+    metadata:
+      labels:
+        app: prediction-api
+    spec:
+      containers:
+      - name: api
+        image: soumya7410/prediction-api:v4
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: prediction-api
+spec:
+  selector:
+    app: prediction-api
+  ports:
+  - port: 8000
+    targetPort: 8000

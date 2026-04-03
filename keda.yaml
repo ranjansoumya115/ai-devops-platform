@@ -1,0 +1,15 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: ai-autoscaler
+spec:
+  scaleTargetRef:
+    name: ai-devops
+  minReplicaCount: 1
+  maxReplicaCount: 10
+  triggers:
+  - type: metrics-api
+    metadata:
+      url: http://prediction-api.default.svc.cluster.local:8000/metric
+      valueLocation: value     # 🔥 VERY IMPORTANT
+      targetValue: "0.12"
