@@ -20,7 +20,7 @@ The system uses:
 ## 🧠 Architecture
 
 ```
-ML Model → FastAPI → KEDA → Kubernetes (HPA) → Auto Scaling
+![AI Autoscaling Architecture](images/architecture.png)
 ```
 
 ---
