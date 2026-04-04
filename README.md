@@ -19,9 +19,9 @@ The system uses:
 
 ## 🧠 Architecture
 
-```
+
 ![AI Autoscaling Architecture](images/architecture.png)
-```
+
 
 ---
 
