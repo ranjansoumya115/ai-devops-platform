@@ -1,0 +1,3 @@
+*.tar
+*.log
+__pycache__/
